@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
     return (
-        <Container fluid>
+        <Container fluid className="px-0">
             <CustomNavbar></CustomNavbar>
             <Outlet></Outlet>
             <Footer></Footer>
