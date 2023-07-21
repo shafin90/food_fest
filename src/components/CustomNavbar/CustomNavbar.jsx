@@ -6,7 +6,7 @@ const CustomNavbar = () => {
     return (
         
             
-            <Navbar expand="lg" className="pt-4 bg-transparent">
+            <Navbar expand="lg" className="pt-4 bg-transparent mb-5">
                 <Container>
                     <Navbar.Brand href="#home">Food-Fest</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

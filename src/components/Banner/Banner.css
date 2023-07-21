@@ -1,0 +1,49 @@
+.banner-blob{
+    position: relative;
+    top: -45vw;
+    left: -3vw;
+    z-index: -1;
+    animation-name: banner-blob-animator;
+    animation-duration: 0.5s;
+}
+.banner-svg-left{
+    
+    position: relative;
+    top: -39vw;
+    left: -19vw;
+    z-index: -1;
+    animation-name: banner-left-blob-animator;
+    animation-duration: 0.5s;
+}
+
+
+
+
+.chicken-korai{
+    position: relative;
+    top: -7vw;
+    
+}
+
+@keyframes banner-blob-animator {
+    0%{
+        left: 60vw;
+    }
+  
+    100%{
+        left: -3vw;
+    }
+    
+}
+
+
+@keyframes banner-left-blob-animator {
+    0%{
+        left: -600vw;
+    }
+  
+    100%{
+        left: -19vw;
+    }
+    
+}
