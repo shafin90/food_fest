@@ -1,0 +1,335 @@
+
+     [
+        {
+            "id":1,
+            "Chef_Picture": "https://www.travenix.com/wp-content/uploads/2018/05/executive-chef-hemant-oberoi-taj-mumbai-550x391.jpg",
+            "Chef_Name": "Mohammed Rahman",
+            "Years_of_Experience": 15,
+            "Number_of_Recipes": 42,
+            "Biography": "Chef Mohammed Rahman is a renowned chef from Dhaka, Bangladesh, with a passion for creating traditional Bangladeshi dishes.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Biriyani",
+                    "Cooking_Method": "Hyderabadi Dum",
+                    "Ingredients": [
+                        "Basmati Rice",
+                        "Chicken",
+                        "Yogurt",
+                        "Onions",
+                        "Spices",
+                        "Saffron",
+                        "Ghee"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Fish Curry",
+                    "Cooking_Method": "Traditional",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Turmeric",
+                        "Green Chilies",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.5
+                },
+                {
+                    "Recipe_Name": "Roshogolla",
+                    "Cooking_Method": "Boiling",
+                    "Ingredients": [
+                        "Paneer",
+                        "Sugar",
+                        "Water",
+                        "Rose Water"
+                    ],
+                    "Rating": 4.9
+                }
+            ]
+        },
+        {
+            "id":2,
+            "Chef_Picture": "https://www.luxurylifestylemag.co.uk/wp-content/uploads/2021/06/Manish-Sharma_Executive-Chef_The-Oberoi-Gurgaon.jpg",
+            "Chef_Name": "Farida Akhter",
+            "Years_of_Experience": 20,
+            "Number_of_Recipes": 30,
+            "Biography": "Chef Farida Akhter is a passionate cook who specializes in traditional Bangladeshi home-cooked meals.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Panta Bhat",
+                    "Cooking_Method": "Fermented Rice",
+                    "Ingredients": [
+                        "Leftover Rice",
+                        "Water",
+                        "Green Chilies",
+                        "Onions",
+                        "Lemon",
+                        "Coriander Leaves"
+                    ],
+                    "Rating": 4.7
+                },
+                {
+                    "Recipe_Name": "Chingri Bhorta",
+                    "Cooking_Method": "Mashed Shrimp",
+                    "Ingredients": [
+                        "Shrimp",
+                        "Onions",
+                        "Green Chilies",
+                        "Mustard Oil",
+                        "Salt"
+                    ],
+                    "Rating": 4.6
+                },
+                {
+                    "Recipe_Name": "Hilsha Curry",
+                    "Cooking_Method": "Spicy",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Onions",
+                        "Tomatoes",
+                        "Garlic",
+                        "Ginger",
+                        "Turmeric",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.9
+                }
+            ]
+        },
+        {
+            "id":3,
+            "Chef_Picture": "https://dusbus.com/wp-content/uploads/2020/09/RavinderBhogal.jpg",
+            "Chef_Name": "Sadia Ahmed",
+            "Years_of_Experience": 12,
+            "Number_of_Recipes": 25,
+            "Biography": "Chef Sadia Ahmed brings a modern twist to traditional Bangladeshi recipes, creating a fusion of flavors and culinary delights.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Mutton Tehari",
+                    "Cooking_Method": "Slow-cooked",
+                    "Ingredients": [
+                        "Basmati Rice",
+                        "Mutton",
+                        "Onions",
+                        "Ginger",
+                        "Garlic",
+                        "Cumin",
+                        "Cardamom",
+                        "Bay Leaf"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Fuchka",
+                    "Cooking_Method": "Street Food",
+                    "Ingredients": [
+                        "Semolina",
+                        "Potatoes",
+                        "Chickpeas",
+                        "Tamarind Water",
+                        "Spices"
+                    ],
+                    "Rating": 4.7
+                },
+                {
+                    "Recipe_Name": "Pitha",
+                    "Cooking_Method": "Steamed",
+                    "Ingredients": [
+                        "Rice Flour",
+                        "Coconut",
+                        "Jaggery",
+                        "Sesame Seeds"
+                    ],
+                    "Rating": 4.6
+                }
+            ]
+        },
+        {
+            "id":3,
+            "Chef_Picture": "https://iexaminer.org/wp-content/uploads/2019/03/Uddin-2-web.jpg",
+            "Chef_Name": "Kamal Hussain",
+            "Years_of_Experience": 18,
+            "Number_of_Recipes": 36,
+            "Biography": "Chef Kamal Hussain is a culinary expert who specializes in recreating age-old Bengali recipes passed down through generations.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Hilsa Bhapa",
+                    "Cooking_Method": "Steamed",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Coconut",
+                        "Green Chilies",
+                        "Turmeric",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.9
+                },
+                {
+                    "Recipe_Name": "Shorshe Ilish",
+                    "Cooking_Method": "Mustard",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Green Chilies",
+                        "Mustard Oil",
+                        "Turmeric"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Panta Ilish",
+                    "Cooking_Method": "Fermented",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Leftover Rice",
+                        "Water",
+                        "Green Chilies",
+                        "Onions"
+                    ],
+                    "Rating": 4.7
+                }
+            ]
+        },
+        {
+            "id":4,
+            "Chef_Picture": "https://www.desiblitz.com/wp-content/uploads/2014/07/Vivek-Singh-1.jpg",
+            "Chef_Name": "Kamal Hussain",
+            "Years_of_Experience": 18,
+            "Number_of_Recipes": 36,
+            "Biography": "Chef Kamal Hussain is a culinary expert who specializes in recreating age-old Bengali recipes passed down through generations.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Hilsa Bhapa",
+                    "Cooking_Method": "Steamed",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Coconut",
+                        "Green Chilies",
+                        "Turmeric",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.9
+                },
+                {
+                    "Recipe_Name": "Shorshe Ilish",
+                    "Cooking_Method": "Mustard",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Green Chilies",
+                        "Mustard Oil",
+                        "Turmeric"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Panta Ilish",
+                    "Cooking_Method": "Fermented",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Leftover Rice",
+                        "Water",
+                        "Green Chilies",
+                        "Onions"
+                    ],
+                    "Rating": 4.7
+                }
+            ]
+        },
+        {
+            "id":5,
+            "Chef_Picture": "http://news.bbc.co.uk/media/images/46635000/jpg/_46635306_3263.jpg",
+            "Chef_Name": "Kamal Hussain",
+            "Years_of_Experience": 18,
+            "Number_of_Recipes": 36,
+            "Biography": "Chef Kamal Hussain is a culinary expert who specializes in recreating age-old Bengali recipes passed down through generations.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Hilsa Bhapa",
+                    "Cooking_Method": "Steamed",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Coconut",
+                        "Green Chilies",
+                        "Turmeric",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.9
+                },
+                {
+                    "Recipe_Name": "Shorshe Ilish",
+                    "Cooking_Method": "Mustard",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Green Chilies",
+                        "Mustard Oil",
+                        "Turmeric"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Panta Ilish",
+                    "Cooking_Method": "Fermented",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Leftover Rice",
+                        "Water",
+                        "Green Chilies",
+                        "Onions"
+                    ],
+                    "Rating": 4.7
+                }
+            ]
+        },
+        {
+            "id":6,
+            "Chef_Picture": "https://img.theepochtimes.com/assets/uploads/2020/03/25/Chef-Floyd-Cardoz-1200x1801.jpg",
+            "Chef_Name": "Kamal Hussain",
+            "Years_of_Experience": 18,
+            "Number_of_Recipes": 36,
+            "Biography": "Chef Kamal Hussain is a culinary expert who specializes in recreating age-old Bengali recipes passed down through generations.",
+            "Recipes": [
+                {
+                    "Recipe_Name": "Hilsa Bhapa",
+                    "Cooking_Method": "Steamed",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Coconut",
+                        "Green Chilies",
+                        "Turmeric",
+                        "Mustard Oil"
+                    ],
+                    "Rating": 4.9
+                },
+                {
+                    "Recipe_Name": "Shorshe Ilish",
+                    "Cooking_Method": "Mustard",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Mustard Paste",
+                        "Green Chilies",
+                        "Mustard Oil",
+                        "Turmeric"
+                    ],
+                    "Rating": 4.8
+                },
+                {
+                    "Recipe_Name": "Panta Ilish",
+                    "Cooking_Method": "Fermented",
+                    "Ingredients": [
+                        "Hilsha Fish",
+                        "Leftover Rice",
+                        "Water",
+                        "Green Chilies",
+                        "Onions"
+                    ],
+                    "Rating": 4.7
+                }
+            ]
+        }
+    ]

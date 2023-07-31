@@ -1,0 +1,88 @@
+.chef-carnival-pic{
+    width: 10vw;
+
+}
+
+
+
+
+  
+.chef {
+
+
+
+
+  padding-bottom: 100px;
+}
+
+/* #root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+} */
+
+
+
+
+
+#progress {
+  position: relative;
+
+  transform: rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: rgb(80, 140, 218);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  height: 15px;
+  width: 5px;
+  background: white;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(80, 140, 218);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: white;
+
+}
+
+li {
+  flex: 0 0 200px;
+  background: var(--accent);
+  margin: 0 20px 0 0;
+}
+
+li:last-of-type {
+  margin: 0;
+}
