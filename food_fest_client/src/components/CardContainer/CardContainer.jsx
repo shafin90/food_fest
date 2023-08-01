@@ -54,7 +54,7 @@ const CardContainer = () => {
 
 
 
-        fetch('http://localhost:5000/all_info')
+        fetch('https://food-fest-server-shafin90.vercel.app/all_info')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

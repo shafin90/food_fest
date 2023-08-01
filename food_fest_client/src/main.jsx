@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: '/:id',
         element: <ChefPage></ChefPage>,
-        loader: ({ params }) => fetch(`http://localhost:5000/all_info/${params.id}`)
+        loader: ({ params }) => fetch(`https://food-fest-server-shafin90.vercel.app/all_info/${params.id}`)
 
       },
       {

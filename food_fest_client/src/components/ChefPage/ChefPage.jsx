@@ -1,4 +1,4 @@
-import { Col, Container, Row, Table, } from "react-bootstrap"
+import { Col, Container, Row, Spinner, Table, } from "react-bootstrap"
 import { useLoaderData } from "react-router-dom";
 import TableDataOfChef from "../TableDataOfChef/TableDataOfChef";
 import { useContext, useState } from "react";
@@ -12,13 +12,14 @@ import "aos/dist/aos.css";
 
 
 const ChefPage = () => {
-    const {setChefID} = useContext(AuthContext);
+    const { setChefID } = useContext(AuthContext);
     const chefInfo = useLoaderData();
     const { Chef_Picture, Chef_Name, Biography, Number_of_Recipies, Year_of_Experience, _id, Recipes } = chefInfo;
 
+    console.log(chefInfo)
 
     // CLEARING CHEFID STATE ==========
-    useEffect(()=>{
+    useEffect(() => {
         setChefID('');
     }, [])
 
@@ -33,7 +34,13 @@ const ChefPage = () => {
 
 
 
-
+    if (!Recipes) {
+        return (
+            <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>
+        );
+    }
 
 
 
@@ -52,7 +59,7 @@ const ChefPage = () => {
             {/* banner of this page=========== */}
             <Row className="pt-3">
                 {/* image of chef==== */}
-                <Col data-aos="fade-right" data-aos-duration="1000"  sm={12} md={6}>
+                <Col data-aos="fade-right" data-aos-duration="1000" sm={12} md={6}>
                     <img className="img-fluid rounded" src={Chef_Picture} alt="" />
                 </Col>
 
