@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const LoginPage = () => {
@@ -31,6 +32,7 @@ const LoginPage = () => {
 
     // SENDING EMAIL AND PASSWORD TO AUTHPROVIDER COMPONENT FOR LOGIN USER=====
     handleLogin(email, password);
+
 
     //NAVIGATE USER TO HOME PAGE IF USER IS LOGGED IN=======
     if (user) {
@@ -63,11 +65,13 @@ const LoginPage = () => {
 
   return (
     <Container fluid>
+
       <Row data-aos="fade-up" data-aos-duration="1500" className="justify-content-center align-items-center vh-100">
         <Col md={6} lg={4}>
 
 
           <h1 className='fw-bold display-4 text-center mb-5'>Login</h1>
+
 
 
 
@@ -113,7 +117,18 @@ const LoginPage = () => {
 
         </Col>
       </Row>
+
+
+
+
+
+
+
+
     </Container>
+
+
+
   );
 }
 

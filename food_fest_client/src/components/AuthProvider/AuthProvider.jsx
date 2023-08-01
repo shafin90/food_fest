@@ -16,6 +16,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState([]);
     const [chefID, setChefID] = useState('') //THIS IS USEFULL FOR PROTECTIVE ROUTE======
     
+    
 
 
     
@@ -59,12 +60,14 @@ const AuthProvider = ({ children }) => {
             .then((userCredential) => {
                 const user = userCredential.user;
                 setUser(user)
-                
+            
 
             })
             .catch((error) => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
+                
+                
             });
     }
 
@@ -90,8 +93,8 @@ const AuthProvider = ({ children }) => {
         logoutUser,
         user,
         setChefID,
-        chefID,
-        
+        chefID
+  
 
     }
 
