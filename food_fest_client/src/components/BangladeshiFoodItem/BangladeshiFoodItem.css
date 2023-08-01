@@ -42,6 +42,15 @@
     );
   }
   .bangladeshi-food-item-pic{
-    width: 4vw;
+    width: 70px;
     margin-left: 1vw;
+  }
+
+
+  @media screen and (max-width:575px) {
+    .cardd{
+      width: 62vw;
+      height: 86vw;
+    }
+    
   }

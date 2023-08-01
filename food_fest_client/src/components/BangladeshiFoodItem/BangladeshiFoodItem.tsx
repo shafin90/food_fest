@@ -140,7 +140,7 @@ const BangladeshiFoodItem = () => {
 
 
 
-      <div data-aos="fade-right" data-aos-duration="1000" className='d-flex justify-content-center align-items-center mb-5'>
+      <div data-aos="fade-right" data-aos-duration="1000" className='d-flex flex-column flex-md-row justify-content-center align-items-center mb-5'>
 
 
         <h1  className="text-center fw-bold display-3 ">Bangladeshi Delicious Food Item</h1>
