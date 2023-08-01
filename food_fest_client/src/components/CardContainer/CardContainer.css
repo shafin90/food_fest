@@ -1,17 +1,9 @@
-.chef-carnival-pic{
-    width: 10vw;
+.chef-carnival-pic {
+  width: 100px;
 
 }
 
-
-
-
-  
 .chef {
-
-
-
-
   padding-bottom: 100px;
 }
 
@@ -39,6 +31,8 @@ circle {
   stroke-dashoffset: 0;
   stroke-width: 15%;
   fill: none;
+  width: 50px;
+  height: 50px;
 }
 
 .bg {
@@ -85,4 +79,23 @@ li {
 
 li:last-of-type {
   margin: 0;
+}
+
+
+.card-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width:575px) {
+  .card-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
 }

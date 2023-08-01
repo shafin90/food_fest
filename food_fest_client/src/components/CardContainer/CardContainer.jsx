@@ -60,11 +60,11 @@ const CardContainer = () => {
     }, [])
 
 
-    
+
 
     const filteredData = data.filter(item => data.indexOf(item) <= 5)
 
-    
+
 
 
 
@@ -111,57 +111,55 @@ const CardContainer = () => {
 
 
             {/* header of this section */}
-            
-
-                <h1 data-aos="flip-left" data-aos-duration="1000" className="display-3 fw-bold text-center mb-4">
-
-                    <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
-                        <motion.circle
-                            cx="50"
-                            cy="50"
-                            r="30"
-                            pathLength="1"
-                            className="indicator"
-                            style={{ pathLength: scrollXProgress }}
-                        />
-                    </svg>
 
 
-
-
-
-
+            <div className='card-heading mb-5'>
+                <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+                    <motion.circle
+                        cx="50"
+                        cy="50"
+                        r="30"
+                        pathLength="1"
+                        className="indicator"
+                        style={{ pathLength: scrollXProgress }}
+                    />
+                </svg>
+                
+                <h1 data-aos="flip-left" data-aos-duration="1000" className="display-3 fw-bold text-center mb-0">
                     Chef Carnival  <img className='img-fluid chef-carnival-pic' src="https://images.fineartamerica.com/images-medium-large-5/chef-cook-baker-smiling-cartoon-aloysius-patrimonio.jpg" alt="" />
-
-
                 </h1>
 
-        
+            </div>
+
+
+
+
+
 
 
 
 
             {/* cards section */}
-            
-                <>
 
-                    <ul data-aos="zoom-in-up" data-aos-duration="1000" ref={ref}>
-                        {
-                            filteredData.map(item => <li><CustomCard
+            <>
 
-
-                                id={item._id}
-                                name={item.Chef_Name}
-                                image={item.Chef_Picture}
-                                description={item.Biography}
-
-                            ></CustomCard></li>)
-                        }
+                <ul data-aos="zoom-in-up" data-aos-duration="1000" ref={ref}>
+                    {
+                        filteredData.map(item => <li><CustomCard
 
 
-                    </ul>
-                </>
+                            id={item._id}
+                            name={item.Chef_Name}
+                            image={item.Chef_Picture}
+                            description={item.Biography}
+
+                        ></CustomCard></li>)
+                    }
+
+
+                </ul>
+            </>
 
 
 
