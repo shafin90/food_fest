@@ -13,6 +13,7 @@ import ChefPage from './components/ChefPage/ChefPage';
 import LoginPage from './components/LoginPage/LoginPage';
 import AuthProvider from './components/AuthProvider/AuthProvider';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: '/:id',
+        path: '/chef/:id',
         element: <ChefPage></ChefPage>,
         loader: ({ params }) => fetch(`https://food-fest-server-shafin90.vercel.app/all_info/${params.id}`)
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path:'/registration',
         element:<RegistrationForm></RegistrationForm>
+      },
+      {
+        path:'*',
+        element:<NotFoundPage></NotFoundPage>
       }
     ]
   },

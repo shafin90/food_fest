@@ -1,4 +1,4 @@
-# LIve Link - https://chef-14558.web.app/
+# Live Link - https://chef-14558.web.app/
 
 - aos library is used for animating element.
 - fammer-motion is also used in some case for animation.
