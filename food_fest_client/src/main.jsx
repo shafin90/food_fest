@@ -42,13 +42,14 @@ const router = createBrowserRouter([
       {
         path:'/registration',
         element:<RegistrationForm></RegistrationForm>
-      },
-      {
-        path:'*',
-        element:<NotFoundPage></NotFoundPage>
       }
+      
     ]
   },
+  {
+    path:'*',
+    element:<NotFoundPage></NotFoundPage>
+  }
 ]);
 
 

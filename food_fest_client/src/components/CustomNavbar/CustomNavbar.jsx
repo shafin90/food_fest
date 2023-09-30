@@ -43,8 +43,8 @@ const CustomNavbar = () => {
                         <Nav.Link className={location.pathname == '/' ? "d-flex fw-bold justify-content-center align-items-center me-3 text-primary" : "d-flex fw-bold justify-content-center align-items-center me-3 text-black"} as={Link} to='/' >Home</Nav.Link>
                         <Nav.Link className={location.pathname == '/blog' ? "d-flex text-primary fw-bold justify-content-center align-items-center me-3" : "d-flex text-black fw-bold justify-content-center align-items-center me-3"} as={Link} to='/blog'>Blog</Nav.Link>
 
-                        <Nav.Link as={Link} to='/login'>
-                            {user ? <Button onClick={handleLogout}>Logout</Button> : <Button>Login</Button>}
+                        <Nav.Link >
+                            {user ? <Button onClick={handleLogout}>Logout</Button> : <Button as={Link} to='/login'>Login</Button>}
 
 
                         </Nav.Link>

@@ -1,38 +1,35 @@
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container,  Form, Button } from 'react-bootstrap';
 
 import { Link, useNavigate } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ToastContainer, toast } from 'react-toastify';
+
+
 
 
 const LoginPage = () => {
   // PASSED INFORMATION THROUGH CONTEXT API======
-  const { handleGoogle, handleLogin, user, chefID } = useContext(AuthContext);
+  const { handleGoogle, handleLogin, user, chefID} = useContext(AuthContext);
 
 
 
-  // STATE DECLARATION FOR THIS COMPONENT======
+  // STATE DECLARATION FOR THIS COMPONENT=============
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-
-
-
-  // DECLARING USENAVIGATE========
+  // DECLARING USENAVIGATE===============
   const navigate = useNavigate();
 
   // FUNCTION TO HANDLE FORM SUBMITION ACTIVITIES======= 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-
-
     // SENDING EMAIL AND PASSWORD TO AUTHPROVIDER COMPONENT FOR LOGIN USER=====
     handleLogin(email, password);
 
+   
 
     //NAVIGATE USER TO HOME PAGE IF USER IS LOGGED IN=======
     if (user) {
@@ -44,14 +41,7 @@ const LoginPage = () => {
         navigate(`/${chefID}`)
       }
     }
-
-
-
   }
-
-
-
-
 
   // INITIALIZE AOS=====
   useEffect(() => {
@@ -60,69 +50,58 @@ const LoginPage = () => {
 
 
 
-
-
-
   return (
     <Container fluid>
+      
+      
+      <div data-aos="fade-up" data-aos-duration="1500" className="d-flex flex-column justify-content-center align-items-center vh-100">
 
-      <Row data-aos="fade-up" data-aos-duration="1500" className="justify-content-center align-items-center vh-100">
-        <Col md={6} lg={4}>
+        {/* FORM HEADING */}
+        <h1 className='fw-bold display-4 text-center mb-5'>Login</h1>
 
+        {/*LOGIN FORM========= */}
+        <Form onSubmit={handleSubmit} className='w-25'>
+          {/* EMAIL FIELD */}
+          <Form.Group controlId="email">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter email" />
+          </Form.Group>
 
-          <h1 className='fw-bold display-4 text-center mb-5'>Login</h1>
+          {/* PASSWORD FIELD */}
+          <Form.Group controlId="password" className='mt-2'>
+            <Form.Label>Password</Form.Label>
+            <Form.Control onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" />
+          </Form.Group>
 
-
-
-
-
-
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter email" />
-            </Form.Group>
-
-            <Form.Group controlId="password" className='mt-2'>
-              <Form.Label>Password</Form.Label>
-              <Form.Control onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" />
-            </Form.Group>
-
-            <Button variant="primary" className='mt-2' type="submit">
-              Submit
-            </Button>
-          </Form>
-
-
-
-
-          <div className="mt-4">
-            <p>Or sign in with:</p>
-            <Button onClick={handleGoogle} variant="outline-danger" className="mr-2 me-2">
-              Google Sign-in
-            </Button>
-            <Button variant="outline-dark">
-              GitHub Sign-in
-            </Button>
-          </div>
+          {/* SUBMIT BUTTON */}
+          <Button variant="primary" className='mt-2' type="submit">
+            Submit
+          </Button>
+        </Form>
 
 
 
 
+        <div className="mt-4">
+          <p className='text-center'>Or sign in with:</p>
 
-          <div className="mt-4">
-            <p>Don't have an account? <Link to="/registration">Register here</Link></p>
-          </div>
+          {/* GOOGLE SIGN IN BUTTON */}
+          <Button onClick={handleGoogle} variant="outline-danger" className="mr-2 me-2">
+            Google Sign-in
+          </Button>
 
+          {/* GITHUB SIGN IN BUTTON */}
+          <Button variant="outline-dark">
+            GitHub Sign-in
+          </Button>
+        </div>
 
-        </Col>
-      </Row>
+        {/* LINK TO REDIRECT USER TO REGISTER PAGE */}
+        <div className="mt-4">
+          <p>Don't have an account? <Link to="/registration">Register here</Link></p>
+        </div>
 
-
-
-
-
-
+      </div>
 
 
     </Container>

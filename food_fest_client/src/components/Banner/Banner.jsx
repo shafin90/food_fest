@@ -61,7 +61,7 @@ const Banner = () => {
 
                         <Col>
                         
-                                <img data-aos="flip-left" data-aos-duration="1500" className="img-fluid" src="https://karamathsrestaurant.com/wp-content/uploads/2022/02/Untitled-4.png" alt="" />
+                                <img data-aos="flip-left" data-aos-duration="1500" className="img-fluid" src="http://mughal.com.bd/admin/uploads/mughal_3.png" alt="" />
                             
                         </Col>
 

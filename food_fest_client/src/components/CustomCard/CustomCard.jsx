@@ -19,7 +19,7 @@ const CustomCard = ({ name, image, description, id }) => {
         
         // FIRST WE CHECK THE USER LOGGED IN OR NOT. IF THE USER IS LOGGED IN THEN USER IS PERMITTED TO VISIT THE CHEF'PROFILE DIRECTLY. ELSE, USER WILL BE  REDIRECTED TO LOGIN PAGE.
         if (user) {
-            navigate(`chef//${id}`);
+            navigate(`chef/${id}`);
         }
         else{
             setChefID(`${id}`);

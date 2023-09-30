@@ -2,6 +2,8 @@ import { createContext, useState } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { app } from "../../../firebase.config";
 import { Navigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
@@ -15,20 +17,21 @@ const AuthProvider = ({ children }) => {
     // DECLARING ALL STATE HERE=============
     const [user, setUser] = useState([]);
     const [chefID, setChefID] = useState('') //THIS IS USEFULL FOR PROTECTIVE ROUTE======
-    
-    
+    const [isLoggedin, setIsLoggedIn] = useState(false);
 
 
-    
+
+
+
 
 
     //GOOGLE AUTHENTICATION HANDLER FUNCTION======
     const handleGoogle = () => {
+        
         signInWithPopup(auth, provider)
             .then((result) => {
                 setUser(result.user)
-
-
+                toast("hurray!!!!!!")
             }).catch((error) => {
                 console.log(error.message)
             });
@@ -55,23 +58,24 @@ const AuthProvider = ({ children }) => {
 
     // FUNCTION TAHT HANDLE LOGIN USER THROUGH EMAIL, PASSWORD==================
     const handleLogin = (email, password) => {
-        console.log(email,password)
+        console.log(email, password)
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
                 setUser(user)
-            
+                
+
 
             })
             .catch((error) => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
-                
-                
+
+
             });
     }
 
-    
+
 
     // FUNCTION TO LOGOUT AN USER=============
     const logoutUser = () => {
@@ -93,15 +97,14 @@ const AuthProvider = ({ children }) => {
         logoutUser,
         user,
         setChefID,
-        chefID
-  
-
+        chefID,
+        isLoggedin,
+        setIsLoggedIn
     }
 
     return (
         <AuthContext.Provider value={sharingValue}>
-
-
+            <ToastContainer/>
             {children}
         </AuthContext.Provider>
 
