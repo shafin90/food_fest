@@ -85,7 +85,7 @@ const food: [string, number, number][] = [
   [
     <div className='d-flex flex-column justify-content-start align-items-center'>
       <h1 className='text-center fw-bold'>Nalli-Nehari</h1>
-      <img src="https://zaykarecipes.com/eng/wp-content/uploads/2020/04/Nihari-Recipe.jpg" className="img-fluid" alt="" />
+      <img src="https://2.bp.blogspot.com/--emmPcjyuQ8/VDwd3CYSHGI/AAAAAAAAD10/Wn0k9z_GdzQ/s1600/Nalli%2BNihari%2B15.jpg" className="img-fluid" alt="" />
     </div>
     , 80, 120],
 
